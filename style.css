@@ -20,11 +20,12 @@
 
     width: 100vw;
     height: 100vh;
-    background: purple;
+    background:linear-gradient(135deg,#10111C, #141655);
     position: fixed;
+    color: white;
     top: 0;
     transition: all 0.3s linear;
-    transform: translateX(-100%)
+    //transform: translateX(-100%)
 }
 
 .show{
@@ -34,4 +35,25 @@
 
 .menu{
     z-index: 33;
+}
+
+.line{
+
+    transition: all 0.2s all;
+}
+.line-1{
+
+    transform: translateY(5px) rotate(225deg);
+    width: 30vw;
+    margin: auto;
+    
+    
+}
+.line-2{
+    opacity: 0;
+}
+.line-3{
+transform: translateY(-5px) rotate(-225deg);
+width: 30vw;
+margin: auto;
 }
