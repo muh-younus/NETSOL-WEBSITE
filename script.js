@@ -2,7 +2,61 @@ let sidebar = document.querySelector(".sidebar");
 let menu = document.querySelector(".menu");
 let line = document.querySelectorAll(".line");
 let text = document.querySelector(".toggleText");
+let text1 = document.querySelectorAll(".text");
 let list = document.querySelectorAll("li");
+let underLay = document.querySelector(".underlay");
+
+let image = ['	https://netsoltech.com/images/contact-usVector.svg',
+               
+               'https://netsoltech.com/images/ascentVector.svg',
+               'https://netsoltech.com/images/investorsVector.svg',
+               'https://netsoltech.com/images/innovationVector.svg',
+               'https://netsoltech.com/images/eventsVector.svg',
+               'https://netsoltech.com/images/digitalVector.svg',
+
+];
+
+text1.forEach((element) =>{
+
+    element.addEventListener("mouseover", ()=>{
+
+        if(element.innerHTML == "Home"){
+
+            underLay.src = image[0];
+        }
+
+        else if(element.innerHTML == "About"){
+
+            underLay.src = image[1];
+        }
+
+        else if(element.innerHTML == "Product"){
+
+            underLay.src = image[2];
+        }
+
+        else if(element.innerHTML == "Inverstor"){
+
+            underLay.src = image[3];
+        }
+
+        else if(element.innerHTML ==  "Innovation"){
+
+            underLay.src = image[4];
+        }
+
+        else if(element.innerHTML == "Event"){
+
+            underLay.src = image[5];
+        }
+        
+
+       
+
+
+    });
+});
+
 
 
 
